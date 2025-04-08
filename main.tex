@@ -2,7 +2,7 @@
 % BCOR=0mm: offset for book binding
 % oneside: can be usesd instead of twoside
 \KOMAoptions{%
-draft=false, % switch between draft and dinal
+draft=true, % switch between draft and final
 titlepage=true, % seperate titlepage
 abstract=true, % abstract heading or not  
 twoside=false, % two or one side
@@ -14,8 +14,8 @@ parskip=false, % can also be full, full+, full-, full*, same for half.
 
 \usepackage[breaklinks]{hyperref}
 %\usepackage{titling} % for \thetitle \theauthor commands for self designed title page
-\usepackage{tabularx}
-\usepackage{booktabs}
+\usepackage{xltabular} % mix out of tabulax and longtable
+\usepackage{booktabs} % provides \toprule \midrule and \bottomrule
 \usepackage{xcolor} % all the colors
 
 \usepackage{listings} % for code blocks
@@ -47,7 +47,7 @@ parskip=false, % can also be full, full+, full-, full*, same for half.
 
 \begin{document}
 % must be after \begin{document}
-%\titlehead{{\Large Unseen University\hfill SS~2002\\}Higher Analytical Institute\\ Mythological Rd\\34567 Etherworld} 
+%\titlehead{{\University\hfill SS~2002\\}H} 
 \subtitle{Subtitle}
 \publishers{Adviser Prof. John Doe}
 
